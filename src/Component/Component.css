@@ -72,6 +72,22 @@ input[type="text"] {
 
 }
 
+input[type="password"] {
+    width: 200px;
+  
+    padding: 8px;
+    margin-bottom: 8px;
+   
+    border: #c7bd5e94;
+    margin-left: 8px;
+    border: 1px solid rgba(130, 130, 153, 0.425);
+    border-radius: 5px;
+
+   font-size: 15px;
+ 
+
+}
+
 .select{
     padding: 5px;
     margin-bottom: 13px;
@@ -153,13 +169,7 @@ img.scanner-img {
 width: 40%;
 height: 100%;
 }
-.scanQr-button{
 
-}
-
-.scanQr-content{
-  
-}
 
 .webcan-container{
     width: 40%;

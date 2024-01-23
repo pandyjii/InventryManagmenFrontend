@@ -19,9 +19,10 @@ export default function SinUp(){
         })
 
         responce= await responce.json();
-     console.log(responce);
-        if(responce){
-            localStorage.setItem('user',JSON.stringify(responce));
+     
+        if(responce.auth){
+           
+            localStorage.setItem('auth',JSON.stringify(responce.auth));
             Navigate('/login')
         }
         else{
@@ -40,7 +41,7 @@ export default function SinUp(){
              <p className="heading">Sinup</p>
             <input type="text" placeholder="name" onChange={(e)=>setName(e.target.value)}/>
             <input type="text" placeholder="email" onChange={(e)=>setEmail(e.target.value)}/>
-            <input type="text" placeholder="password" onChange={(e)=>setPassword(e.target.value)}/>
+            <input type="password" placeholder="password" onChange={(e)=>setPassword(e.target.value)}/>
             <button className="button">submit</button>
 
         </form>
