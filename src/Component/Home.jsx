@@ -116,7 +116,7 @@ export default function Home({ fileResult }) {
                     <p>{item.name}</p>
                     <p>{item.date}/{item.Quantity}</p>
                     <p >{disable ? Date(item.updatedAt) : ''}</p>
-                    <p>{date.getFullYear() + '-' + date.getDate() + '-' + date.getMonth() + 1}/{item.updaQuantity && item.updaQuantity.length}</p>
+                   {item.updaQuantity.length===1? <p>{date.getFullYear() + '-' + date.getDate() + '-' + date.getMonth() + 1}/{item.updaQuantity && item.updaQuantity.length}</p>:'-------'}
                     <p>{pending = item.Quantity - item.updaQuantity.length}</p>
                     <p>{pending === 0 ? 'Dispached' : 'pending'}</p>
                     <div>
