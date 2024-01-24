@@ -12,8 +12,9 @@ export default function SinUp(){
         let responce=await fetch('http://localhost:8081/sinup',{
             method:'POST',
             body:JSON.stringify({name,email,password}),
-            headers:{
-                'Content-type':'application/json'
+            headers: {
+                'Content-type': 'application/json',
+                 
             }
 
         })

@@ -19,9 +19,8 @@ export default function CreateScanner() {
             body: JSON.stringify({ date, name, Quantity }),
             headers: {
                 'Content-type': 'application/json',
-               
-                    authorization:`bearer ${JSON.parse(localStorage.getItem('auth'))}`
-                  
+             authorization:`bearer ${JSON.parse(localStorage.getItem('auth'))}`
+                 
             }
         })
         responce = await responce.json();
